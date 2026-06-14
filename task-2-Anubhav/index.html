@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Anubhav Kumar – Frontend Developer & BCA Student from Mohali. Building fast, beautiful websites." />
+  <title>Anubhav Kumar | Frontend Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-mono">AK<span style="color:var(--muted)"> / Portfolio</span></div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <p style="font-size:.72rem;color:var(--muted);font-family:var(--ff-mono)">Initialising…</p>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <a href="#hero" class="nav-logo" aria-label="Anubhav Kumar home">
+        Anubhav<span class="dot">.</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#hero"     class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-gold nav-cta" aria-label="Hire me">
+        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Hire Me
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mob-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- MOBILE SIDEBAR -->
+<div class="mob-overlay" id="mob-overlay" aria-hidden="true"></div>
+<nav class="mob-menu" id="mob-menu" aria-label="Mobile navigation">
+  <a href="#hero"     ><i class="fa-solid fa-house"        aria-hidden="true"></i> Home</a>
+  <a href="#about"    ><i class="fa-solid fa-user"          aria-hidden="true"></i> About</a>
+  <a href="#skills"   ><i class="fa-solid fa-code"          aria-hidden="true"></i> Skills</a>
+  <a href="#projects" ><i class="fa-solid fa-folder-open"   aria-hidden="true"></i> Projects</a>
+  <a href="#education"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Education</a>
+  <a href="#contact"  ><i class="fa-solid fa-envelope"      aria-hidden="true"></i> Contact</a>
+  <div class="mob-divider" role="separator"></div>
+  <a href="https://www.linkedin.com/in/anubhav-karn-269419330" target="_blank" rel="noopener">
+    <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
+  </a>
+  <a href="https://karnanubhav-netizen.github.io/event-management/" target="_blank" rel="noopener">
+    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Project
+  </a>
+  <a href="#contact" class="btn btn-gold" style="margin-top:.75rem">
+    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Hire Me
+  </a>
+</nav>
+
+<!-- ================================================================
+     HERO
+     ================================================================ -->
+<section class="hero" id="hero" aria-label="Introduction">
+  <div class="hero-bg"      aria-hidden="true"></div>
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="hero-monogram" aria-hidden="true">AK</div>
+  <div class="hero-dots"    aria-hidden="true" id="hero-dots"></div>
+
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- TEXT -->
+      <div class="hero-text">
+        <div class="hero-tag" aria-label="Available for opportunities">
+          Available for Opportunities
+        </div>
+
+        <h1 class="hero-name">
+          <span class="fname">Anubhav</span>
+          <span class="lname">Kumar</span>
+        </h1>
+
+        <p class="hero-role">
+          <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+          <span>Frontend Developer</span> &nbsp;·&nbsp; BCA Student
+        </p>
+
+        <p class="hero-bio">
+          I love building fast, beautiful websites. Currently in my 3rd year of BCA at Saraswati Group of Colleges, Gharuan — crafting clean, responsive interfaces that work perfectly on every screen.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-gold">
+            <i class="fa-solid fa-folder-open" aria-hidden="true"></i> View My Work
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> Get In Touch
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/anubhav-karn-269419330"
+             target="_blank" rel="noopener" class="soc-link"
+             aria-label="LinkedIn profile">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+          <a href="https://karnanubhav-netizen.github.io/event-management/"
+             target="_blank" rel="noopener" class="soc-link"
+             aria-label="Live project">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:anubhav@example.com" class="soc-link" aria-label="Email me">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+          <div class="soc-sep" aria-hidden="true"></div>
+          <span class="soc-txt">Gharuan, Mohali · India</span>
+        </div>
+      </div>
+
+      <!-- AVATAR -->
+      <div class="hero-avatar-wrap" aria-hidden="true">
+        <div class="avatar-ring">
+          <div class="orbit-dot"></div>
+          <div class="orbit-dot"></div>
+          <div class="orbit-dot"></div>
+          <div class="orbit-dot"></div>
+          <div class="avatar-ring-inner">AK</div>
+        </div>
+
+        <div class="hero-chip">
+          <div class="chip-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <span class="chip-title">BCA 3rd Year</span>
+            <span class="chip-sub">Saraswati Group of Colleges</span>
+          </div>
+        </div>
+
+        <div class="hero-chip">
+          <div class="chip-icon"><i class="fa-solid fa-code"></i></div>
+          <div>
+            <span class="chip-title">Frontend Developer</span>
+            <span class="chip-sub">HTML · CSS · JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /hero-inner -->
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="scroll-arrow"></div>
+    scroll
+  </div>
+</section>
+
+<!-- ================================================================
+     ABOUT
+     ================================================================ -->
+<section class="section about-section reveal" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="sec-label">About Me</div>
+        <h2 class="sec-title" id="about-title">Passionate about the<br>web's craft</h2>
+        <div class="gold-rule"></div>
+        <p class="about-bio">
+          Hello! I'm Anubhav Kumar, a Frontend Developer and BCA student from Gharuan, Mohali.
+          I believe great websites aren't just built — they're engineered with precision and designed with empathy.
+          Every pixel, every interaction, every line of CSS is an opportunity to create something that genuinely
+          helps people.
+        </p>
+        <p class="about-bio">
+          My approach is mobile-first, performance-focused, and always accessible. I'm currently deepening my
+          expertise in responsive web design, JavaScript, and modern CSS techniques through real-world projects
+          and my DecodeLabs internship.
+        </p>
+        <div class="about-quick">
+          <div class="aq-item">
+            <div class="aq-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+            <div>
+              <div class="aq-label">Location</div>
+              <div class="aq-val">Gharuan, Mohali, Punjab</div>
+            </div>
+          </div>
+          <div class="aq-item">
+            <div class="aq-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
+            <div>
+              <div class="aq-label">Education</div>
+              <div class="aq-val">BCA 3rd Year — Saraswati Group of Colleges</div>
+            </div>
+          </div>
+          <div class="aq-item">
+            <div class="aq-icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></div>
+            <div>
+              <div class="aq-label">Status</div>
+              <div class="aq-val">Open to Internships & Freelance</div>
+            </div>
+          </div>
+        </div>
+        <a href="Anubhav CV.pdf"  class="btn btn-gold" aria-label="Jump to resume section">
+          <i class="fa-solid fa-download" aria-hidden="true"></i> Download Resume
+        </a>
+      </div>
+
+      <div class="about-right">
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num counter" data-target="3">0</span>
+            <span class="stat-lbl">Years Learning</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num counter" data-target="5">0</span>
+            <span class="stat-lbl">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num counter" data-target="8">0</span>
+            <span class="stat-lbl">Skills Mastered</span>
+          </div>
+        </div>
+
+        <!-- What I do cards -->
+        <div style="display:flex;flex-direction:column;gap:.875rem;margin-top:1.5rem">
+          <div class="aq-item" style="background:var(--navy-deep)">
+            <div class="aq-icon"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i></div>
+            <div>
+              <div class="aq-val" style="margin-bottom:.2rem">Responsive Design</div>
+              <div class="aq-label">Mobile-first layouts that work on every screen</div>
+            </div>
+          </div>
+          <div class="aq-item" style="background:var(--navy-deep)">
+            <div class="aq-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+            <div>
+              <div class="aq-val" style="margin-bottom:.2rem">Performance Focus</div>
+              <div class="aq-label">Fast-loading, optimised, clean HTML & CSS</div>
+            </div>
+          </div>
+          <div class="aq-item" style="background:var(--navy-deep)">
+            <div class="aq-icon"><i class="fa-solid fa-universal-access" aria-hidden="true"></i></div>
+            <div>
+              <div class="aq-val" style="margin-bottom:.2rem">Accessible UIs</div>
+              <div class="aq-label">WCAG-aware, keyboard-friendly interfaces</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     SKILLS
+     ================================================================ -->
+<section class="section reveal" id="skills" aria-labelledby="skills-title">
+  <div class="container">
+    <div class="section-header" style="text-align:left;max-width:36rem">
+      <div class="sec-label">Technical Skills</div>
+      <h2 class="sec-title" id="skills-title">My Toolbox</h2>
+      <div class="gold-rule"></div>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- Core Web -->
+      <div class="skill-group">
+        <div class="sg-header">
+          <div class="sg-icon"><i class="fa-brands fa-html5" aria-hidden="true"></i></div>
+          <div>
+            <div class="sg-title">Core Web</div>
+            <div class="sg-cat">Foundation Technologies</div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">HTML5</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">CSS3</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">JavaScript (ES6+)</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="tech-cloud">
+          <span class="tech-badge">Semantic HTML</span>
+          <span class="tech-badge">CSS Variables</span>
+          <span class="tech-badge">DOM API</span>
+          <span class="tech-badge">ES6 Modules</span>
+        </div>
+      </div>
+
+      <!-- Layout & Design -->
+      <div class="skill-group">
+        <div class="sg-header">
+          <div class="sg-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+          <div>
+            <div class="sg-title">Layout & Design</div>
+            <div class="sg-cat">Responsive Architecture</div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">CSS Flexbox</span><span class="skill-pct">88%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">CSS Grid</span><span class="skill-pct">82%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Responsive / Media Queries</span><span class="skill-pct">87%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="87"></div></div>
+        </div>
+        <div class="tech-cloud">
+          <span class="tech-badge">Mobile-First</span>
+          <span class="tech-badge">clamp()</span>
+          <span class="tech-badge">minmax()</span>
+          <span class="tech-badge">min-width queries</span>
+        </div>
+      </div>
+
+      <!-- Tools & Extras -->
+      <div class="skill-group">
+        <div class="sg-header">
+          <div class="sg-icon"><i class="fa-solid fa-wrench" aria-hidden="true"></i></div>
+          <div>
+            <div class="sg-title">Tools & Frameworks</div>
+            <div class="sg-cat">Ecosystem & Workflow</div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Bootstrap 5</span><span class="skill-pct">78%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Git & GitHub</span><span class="skill-pct">72%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span class="skill-name">Figma (UI Design)</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        </div>
+        <div class="tech-cloud">
+          <span class="tech-badge">VS Code</span>
+          <span class="tech-badge">GitHub Pages</span>
+          <span class="tech-badge">Chrome DevTools</span>
+          <span class="tech-badge">Figma</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     PROJECTS
+     ================================================================ -->
+<section class="section projects-section reveal" id="projects" aria-labelledby="projects-title">
+  <div class="container">
+    <div style="text-align:left;max-width:36rem;margin-bottom:clamp(2rem,5vw,3rem)">
+      <div class="sec-label">My Work</div>
+      <h2 class="sec-title" id="projects-title">Projects I've Built</h2>
+      <div class="gold-rule" style="margin-bottom:0"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 — Real -->
+      <article class="proj-card">
+        <div class="proj-thumb" style="background:linear-gradient(135deg,#0d2035,#1a4060)">
+          <span role="img" aria-label="College Event Management website">🎓</span>
+          <span class="proj-badge badge-live">Live</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-number">Project — 01</div>
+          <h3 class="proj-name">College Event Management</h3>
+          <p class="proj-desc">
+            A fully responsive event management website built for college use. Features event listings, registration flow, and a clean mobile-first UI. Designed and coded from scratch.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">HTML5</span>
+            <span class="proj-tag">CSS3</span>
+            <span class="proj-tag">JavaScript</span>
+            <span class="proj-tag">Responsive</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://karnanubhav-netizen.github.io/event-management/"
+               target="_blank" rel="noopener" class="proj-link primary"
+               aria-label="View live College Event Management project">
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 — TechNova (from this session) -->
+      <article class="proj-card">
+        <div class="proj-thumb" style="background:linear-gradient(135deg,#080d20,#1a2a50)">
+          <span role="img" aria-label="TechNova E-Commerce Store">🛒</span>
+          <span class="proj-badge badge-live">working</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-number">Project — 02</div>
+          <h3 class="proj-name">TechNova Store</h3>
+          <p class="proj-desc">
+            A full-featured e-commerce platform with 12+ product cards, flash sale countdown, category filters, quick-view modal, dark/light mode, and fully mobile-first responsive layout.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">HTML5</span>
+            <span class="proj-tag">CSS Grid</span>
+            <span class="proj-tag">Flexbox</span>
+            <span class="proj-tag">Vanilla JS</span>
+            <span class="proj-tag">Mobile-First</span>
+          </div>
+          <div class="proj-links">
+            <a href="#" class="proj-link primary" aria-label="View TechNova Store">
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Working
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 — Coming soon / placeholder -->
+      <article class="proj-card">
+        <div class="proj-thumb" style="background:linear-gradient(135deg,#1a0d35,#3a1060)">
+          <span role="img" aria-label="Portfolio Website project">💼</span>
+          <span class="proj-badge badge-soon">This Site</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-number">Project — 03</div>
+          <h3 class="proj-name">Personal Portfolio</h3>
+          <p class="proj-desc">
+            This very portfolio — built mobile-first with semantic HTML, CSS custom properties, clamp() fluid typography, CSS Grid layouts, scroll-reveal animations, and full form validation.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">HTML5</span>
+            <span class="proj-tag">CSS3</span>
+            <span class="proj-tag">Vanilla JS</span>
+            <span class="proj-tag">Mobile-First</span>
+            <span class="proj-tag">WCAG</span>
+          </div>
+          <div class="proj-links">
+            <a href="#hero" class="proj-link primary" aria-label="You are here">
+              <i class="fa-solid fa-eye" aria-hidden="true"></i> You're Here
+            </a>
+            <a href="#contact" class="proj-link" aria-label="Contact Anubhav">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     EDUCATION
+     ================================================================ -->
+<section class="section edu-section reveal" id="education" aria-labelledby="edu-title">
+  <div class="container">
+    <div style="text-align:left;max-width:36rem;margin-bottom:clamp(2rem,5vw,3rem)">
+      <div class="sec-label">Education</div>
+      <h2 class="sec-title" id="edu-title">Academic Journey</h2>
+      <div class="gold-rule" style="margin-bottom:0"></div>
+    </div>
+
+    <div class="edu-timeline">
+
+      <div class="edu-item">
+        <div class="edu-dot-wrap">
+          <div class="edu-dot"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-year">2024 – 2026 · Current</div>
+          <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
+          <div class="edu-college">Saraswati Group of Colleges, Gharuan, Mohali</div>
+          <div class="edu-desc">
+            Currently in 3rd year, focusing on web development, programming fundamentals, database systems, and software engineering. Actively building real-world projects alongside academics.
+          </div>
+          <div class="edu-tags">
+            <span class="edu-tag">Web Development</span>
+            <span class="edu-tag">Data Structures</span>
+            <span class="edu-tag">DBMS</span>
+            <span class="edu-tag">OS</span>
+            <span class="edu-tag">Networking</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-dot-wrap">
+          <div class="edu-dot"><i class="fa-solid fa-school" aria-hidden="true"></i></div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-year">2022 – 2024</div>
+          <div class="edu-degree">12th Standard (Science Stream)</div>
+          <div class="edu-college">Bihar State Board</div>
+          <div class="edu-desc">
+            Completed senior secondary education with a focus on Mathematics and Computer Science, laying the foundation for a career in technology.
+          </div>
+          <div class="edu-tags">
+            <span class="edu-tag">Mathematics</span>
+            <span class="edu-tag">Computer Science</span>
+            <span class="edu-tag">Physics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-dot-wrap">
+          <div class="edu-dot"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-year">2025 · Ongoing</div>
+          <div class="edu-degree">Frontend Development Internship</div>
+          <div class="edu-college">DecodeLabs · Industrial Training Program</div>
+          <div class="edu-desc">
+            Completing Project 2 — Responsive Web Layout. Building professional-grade, mobile-first websites using CSS Grid, Flexbox, clamp() typography, and semantic HTML5.
+          </div>
+          <div class="edu-tags">
+            <span class="edu-tag">Mobile-First CSS</span>
+            <span class="edu-tag">CSS Grid</span>
+            <span class="edu-tag">Responsive Design</span>
+            <span class="edu-tag">DecodeLabs</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     CONTACT
+     ================================================================ -->
+<section class="section contact-section reveal" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="sec-label">Get In Touch</div>
+        <h2 class="sec-title" id="contact-title">Let's Build<br>Something Together</h2>
+        <div class="gold-rule"></div>
+        <p>Whether you have a project in mind, want to collaborate, or just want to say hello — my inbox is always open.</p>
+        <div class="c-items">
+          <div class="c-item">
+            <div class="c-icon"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/anubhav-karn-269419330" target="_blank" rel="noopener">
+                linkedin.com/in/anubhav-karn-269419330
+              </a>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Gharuan, Mohali, Punjab, India</p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+            <div>
+              <h4>Live Project</h4>
+              <a href="https://karnanubhav-netizen.github.io/event-management/" target="_blank" rel="noopener">
+                College Event Management
+              </a>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></div>
+            <div>
+              <h4>Availability</h4>
+              <p>Open to internships &amp; freelance projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <h3>Send a Message</h3>
+        <form id="contact-form" novalidate aria-label="Contact Anubhav">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-name">Your Name *</label>
+              <input type="text" id="c-name" placeholder="Rahul Sharma" autocomplete="name" />
+              <div class="form-err" id="err-name" role="alert">Name must be at least 2 characters.</div>
+            </div>
+            <div class="form-group">
+              <label for="c-email">Your Email *</label>
+              <input type="email" id="c-email" placeholder="rahul@gmail.com" autocomplete="email" />
+              <div class="form-err" id="err-email" role="alert">Please enter a valid email.</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="c-subject">Subject *</label>
+            <input type="text" id="c-subject" placeholder="Project collaboration, internship offer…" />
+            <div class="form-err" id="err-subject" role="alert">Please enter a subject.</div>
+          </div>
+          <div class="form-group">
+            <label for="c-message">Message *</label>
+            <textarea id="c-message" placeholder="Tell me about your project or opportunity…"></textarea>
+            <div class="form-err" id="err-msg" role="alert">Message must be at least 10 characters.</div>
+          </div>
+          <button type="submit" class="btn btn-gold" style="width:100%">
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send Message
+          </button>
+          <div class="form-ok" id="form-ok" role="alert">
+            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+            Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     FOOTER
+     ================================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <p class="footer-copy">
+        © 2025 <span>Anubhav Kumar</span>. Designed &amp; built with
+        <span style="color:var(--red)">♥</span> using HTML, CSS &amp; JS. - Project 2
+      </p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/anubhav-karn-269419330"
+           target="_blank" rel="noopener" class="soc-link" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+        <a href="https://karnanubhav-netizen.github.io/event-management/"
+           target="_blank" rel="noopener" class="soc-link" aria-label="Live project">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+        </a>
+        <a href="#contact" class="soc-link" aria-label="Email">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FIXED BUTTONS -->
+<div class="fixed-btns">
+  <button class="fx-btn" id="btn-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+</div>
+
+<!-- ================================================================
+     JAVASCRIPT
+     ================================================================ -->
+<script src="script.js" defer></script>
+</body>
+</html>
